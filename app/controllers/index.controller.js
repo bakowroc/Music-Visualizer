@@ -1,4 +1,4 @@
 
-module.exports = (req, res)=> {
-  return res.send("index");
+module.exports = (req, res)=>{
+  res.send("index");
 }
