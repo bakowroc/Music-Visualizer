@@ -4,7 +4,8 @@
   "description": "App for visualising music using fast Fourier transform, written in Node.js and Angular4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "start": "mocha test && node server",
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "chai": "^4.0.2",
+    "chai-http": "^3.0.0",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
     "mocha": "^3.4.2",

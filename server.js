@@ -25,11 +25,17 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 require('./app/routes/router')(app);
 
+if(process.env.NODE_ENV === "test"){
+	mongoose.connect(config.db_test);
+	app.listen(port);
+    console.log('App runs in test mode');
+}else{
+ 	mongoose.connect(config.db_dev);
+ 	app.listen(port);
+ 	console.log('App runs in develop mode');
+}
 
-mongoose.connect(config.db);
-
-mongoose.connection.on('connected', ()=> {
-  console.log('Mongoose default connection open to ' + config.db);
-});
 
 app.listen(port, ()=>console.log("Server started on port " + port));
+
+module.exports = app;

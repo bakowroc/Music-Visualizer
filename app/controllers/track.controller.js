@@ -8,7 +8,7 @@ module.exports = {
 
     TrackModel.find({}, (err, tracks) =>{
             if(err){
-              res.json({status: false, error: "error"})
+              res.json({status: false, error: "error"});
               return;
             }
             res.json({
@@ -16,19 +16,7 @@ module.exports = {
               track: tracks
             });
           }
-
     );
-
-    // TrackModel.find().exec(function(err, tracks) {
-    //   console.log(tracks);
-    // });
-
-    //
-    // TrackModel.findOne({ 'name': 'Song1' }, function (err, track) {
-    //   if (err) return err;
-    //   console.log('%s', track.link);
-    // });
-
 
   }
 
