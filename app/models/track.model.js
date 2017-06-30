@@ -9,7 +9,7 @@ const TrackSchema = new Schema({
     link: {
         type: String
     },
-    created_date{
+    created_date: {
         type: Date,
         default: Date.now
     }
@@ -18,6 +18,6 @@ const TrackSchema = new Schema({
 });
 
 
-const TrackModel = mongoose.model('Track', TrackSchema);
+const TrackModel = mongoose.model('track', TrackSchema);
 
 module.exports = TrackModel;
