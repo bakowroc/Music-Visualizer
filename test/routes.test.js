@@ -9,7 +9,7 @@ chai.use(chaiHttp);
 const routes = [
     '/',
     '/api/tracks'
-]
+];
 
 describe('Routes testing:', ()=>{
 
