@@ -1,0 +1,29 @@
+{
+  "name": "music-visualizer",
+  "version": "1.0.0",
+  "description": "App for visualising music using fast Fourier transform, written in Node.js and Angular4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomaszBorczyk/Music-Visualizer.git"
+  },
+  "author": "omtke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomaszBorczyk/Music-Visualizer/issues"
+  },
+  "homepage": "https://github.com/TomaszBorczyk/Music-Visualizer#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "chai": "^4.0.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "mongojs": "^2.4.0",
+    "mongoose": "^4.11.0",
+    "sinon": "^2.3.6"
+  }
+}
