@@ -1,6 +1,6 @@
 
 
 module.exports = function(app){
-  require('./index');
-  require('./tracks');
+  require('./index')(app);
+  require('./tracks')(app);
 };

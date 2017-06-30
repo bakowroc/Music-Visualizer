@@ -1,9 +1,10 @@
 
 
-module.exports = function(req, res){
-
-  getTracks = function() {
-
+module.exports = {
+  getTracks: (req, res) =>{
+    res.send('tracks');
   }
+
+  
 
 }
