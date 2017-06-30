@@ -1,13 +1,9 @@
 
 
-module.exports = (req,res)=>{
+module.exports = {
 
-    const Track = {};
-
-    Track.getTracks = (req, res){
-
-        res.send('Index');
-
+    getTracks: (req, res)=>{
+        res.send('tracks');
     }
 
 }
